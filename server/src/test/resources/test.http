@@ -1,0 +1,57 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/[Name]BookstoreOrder/api/categories
+Accept: application/json
+
+###
+POST http://localhost:8080/ArnavBookstoreTransact/api/orders
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: http://localhost:8081/
+Origin: http://localhost:8081
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Content-Type: application/json
+
+{
+  "cart": {
+    "items": [
+      {
+        "book": {
+          "bookId": 1001,
+          "title": "Stone Cold",
+          "author": "A P BATEMAN",
+          "description": "",
+          "price": 1299,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Arnav",
+    "address": "820 Patrick Henry Drive",
+    "phone": "5408248511",
+    "email": "arnav.chh@gmail.com",
+    "ccNumber": "4444-3333-2222-1111",
+    "ccExpiryMonth": "one",
+    "ccExpiryYear": 2021
+  }
+}
+
+###
+
+

@@ -1,0 +1,30 @@
+DELETE FROM book;
+ALTER TABLE book AUTO_INCREMENT = 1001;
+
+DELETE FROM category;
+ALTER TABLE category AUTO_INCREMENT = 1001;
+
+INSERT INTO `category` (`name`) VALUES ('Adventure'),('Biography'),('Computer'),('Mystery'),('Sports');
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Stone Cold', 'A P BATEMAN', '', 1299, 0, TRUE, FALSE, 1001);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Billy Summers', 'Stephen King', '', 1899, 0, TRUE, FALSE, 1001);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Fahrenheit 451', 'Ray Bradbury', '', 899, 0, FALSE, FALSE, 1001);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Harry Potter and the Sorcerer''s Stone', 'J.K. Rowling', '', 2299, 0, FALSE, FALSE, 1001);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('A Promised Land', 'Barack Obama', '', 2499, 0, FALSE, FALSE, 1002);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`)VALUES ('Born a Crime', 'Trevor Noah', '', 2099, 0, TRUE, FALSE, 1002);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Hidden Figures', 'Margot Lee Shetterly', '', 1799, 0, TRUE, FALSE, 1002);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Crying in H Mart', 'Michelle Zauner', '', 1599, 0,FALSE, FALSE, 1002);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('The Non-Designers Design Book', 'Robin Willaims', '', 999, 0, TRUE, FALSE, 1003);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Designing Data-Intensive Applications', 'Martin Kleppmann', '', 1499, 0, FALSE, FALSE, 1003);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Computer Networking: A Top-Down Approach', 'Kurose, Ross', '', 1999, 0, FALSE, FALSE, 1003);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('HTML & CSS :Design and build websites', 'John Duckett', '', 2499, 0, TRUE, FALSE, 1003);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('The Silent Patient', 'Alex Michaelides', '', 1199, 0, TRUE, FALSE, 1004);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Dark Places', 'Gillian Flynn', '', 1799, 0, FALSE, FALSE, 1004);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('In Cold Blood', 'Truman Capote', '', 1299, 0, FALSE, FALSE, 1004);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Postmortem', 'Patricia Cornwell', '', 2399, 0, TRUE, FALSE, 1004);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('The Boys of Summer', 'Roger Kahn', '', 499, 0, TRUE, FALSE, 1005);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Legacy', 'James Kerr', '', 2199, 0, TRUE, FALSE, 1005);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('Ali: A Life', 'Jonathan Eig', '', 2599, 0, FALSE, FALSE, 1005);
+INSERT INTO `book` (`title`, `author`, `description`, `price`, `rating`, `is_public`, `is_featured`, `category_id`) VALUES ('The Sweet Science', 'A. J. Liebling', '', 999, 0, FALSE, FALSE, 1005);
+
+
+
